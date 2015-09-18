@@ -1,0 +1,11 @@
+.caps:first-letter { line-height: 36px; }
+
+.homepage-about-bottom .back-top { margin: -25px 0 0 292px; padding: 0; position: absolute; }
+
+.events-bottom .back-top { margin: -25px 0 0 90px; position: absolute; }
+
+.comments-item { float: left; }
+
+.comments-item .time b { margin: 0 9px 0 0; padding: 0 25px 2px 0; background: url(../images/ico-date-1.png) center right no-repeat; }
+
+.comments-item .time s { padding: 0; padding: 0; text-decoration: none; float: left; }

@@ -1,0 +1,283 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Template Documentation Template</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Bordeaux Premium Wordpress Theme&rdquo; Documentation by &ldquo;Orange-Themes.com&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Bordeaux Premium Wordpress Theme&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 20/02/2010<br>
+					By: <a href="http://www.orange-themes.com">Orange-Themes.com</a><br>
+					Email: <a href="mailto:support@orange-themes.com">support@orange-themes.com</a>
+					Example page: <a href="http://bordeaux.orange-themes.com">Bordeaux Theme</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/orange-themes">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#Installation">Instalation of themes</a></li>
+			<li><a href="#links">Configuring theme links</a></li>
+			<li><a href="#beforwork">Before starting work with the theme</a></li>
+			<li><a href="#menu">Top Menu</a></li>
+			<li><a href="#widgets">Right Sidebar interchangeable widgets</a></li>
+			<li><a href="#controlpanel">Orange Themes administration panel</a></li>
+			<li><a href="#thumbnails">Post Thumbnails</a></li>
+			<li><a href="#sliderimg">Add slider images</a></li>
+			<li><a href="#readmore">Use Read More tags in your posts</a></li>
+			<li><a href="#gallery">Gallery page</a></li>
+			<li><a href="#reservations">Using reservations</a></li>
+			<li><a href="#cantact">Contact page</a></li>
+			<li><a href="#menu">Menu Card page</a></li>
+			<li><a href="#blogpage">Blog page</a></li>
+			<li><a href="#shortcode">Shortcode</a></li>
+			<li><a href="#cssfiles">Css Files</a></li>
+			<li><a href="#translating">Translating</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="Installation"><strong>A) Instalation of themes</strong> - <a href="#toc">top</a></h3>
+		<p><b>1) FILE UPLOAD</b></p>
+		<p>To start a theme you need to upload it on your server (wp-content/themes ). There are two ways how to do it:</p>
+		<p style="padding-left:20px;"><b>a)</b> With a wordpress theme installer, you need to upload only the .zip file of the theme (see picture below) </p>
+		<a href="assets/images/image-1.png" target="blank"><center><img src="assets/images/image-1.png"></center></a>
+		<p style="padding-left:20px;"><b>b)</b> Using one of the FTP clients, for example, <a href="http://filezilla-project.org/" target="blank"><b><i>FileZilla</i></b></a>. In this case you need to upload only a folder of the theme (see picture below). Upload the theme folder to <b><i>wp-content/themes</i></b> </p>
+		<a href="assets/images/image-2.png" target="blank"><center><img src="assets/images/image-2.png"></center></a>
+		<p>The remaining files/folders are intended for modifying the theme (if necessary), those files/folders should not be uploaded to server.</p>
+		
+		<p><b>2) FILE AND FOLDER PERMISSIONS</b></p>
+		
+		<p>After installing a theme you need to check permissions for files! It is necessary in cases when the images posted in the blog are not shown. To set up file permissions you need any of FTP clients, for example, <a href="http://filezilla-project.org/" target="blank"><b><i>FileZilla</i></b></a>. When connecting to server and opening a folder of theme in wp-content/themes folder, you should ensure that folder <b><i>cache</i></b> and <b><i>timthumb.php</i></b> file both have permission <b><i>755</i></b>. Like in the picture below.</p>
+		<a href="assets/images/image-3.png" target="blank"><center><img src="assets/images/image-3.png"></center></a><br><br>
+		<p>If this folder or file has another permission of a lower level than <strong>755</strong>, for example, 655, then it has to be changed. Do it as follows: right click on the file, choose <em><strong>File permissions...</strong></em> and you will see an option to change it.</p>	
+		<h3 id="links"><strong>B) Configuring theme links</strong> - <a href="#toc">top</a></h3>
+		<p>After the theme is set you need to set the links of the theme. To do that you should go to administration panel <em><strong>(wp-admin) &gt;&gt; Settings &gt;&gt; Permalinks</strong></em>. After this option opens, choose <em><strong>Custom Structure</strong></em> and enter in the field <em><strong>/%postname%/ </strong></em>(suggested)</p>
+		<a href="assets/images/image-4.png" target="blank"><center><img src="assets/images/image-4-m.png"></center></a>
+	
+		
+		<p>See <a href="http://codex.wordpress.org/Using_Permalinks">Using Permalinks</a> for more information.</b></p>
+		
+		<hr>
+		
+		<h3 id="beforwork"><strong>C) Before starting work with the theme</strong> - <a href="#toc">top</a></h3>
+		<p><strong><em>After setting a theme define Homepage and Blog page</em></strong>. For that you need to create 2 new pages: For that you need to create 2 new pages: 
+First – Homepage and second – Blog. Titles of pages may differ. By creating Home page choose the theme of the page (see picture).</p>
+		<a href="assets/images/image-5.png" target="blank"><center><img src="assets/images/image-5-m.png"></center></a><br><br>
+		<p><em>(</em><em>If new pages are created and the thene of any page is chosen, then the content field should be left blank, except Contact page theme – there you can add content)</em> After these two pages are created go to <em><strong>Settings &gt;&gt; Reading</strong></em> and set these pages as a home page and Blog; see picture!</p>
+		<a href="assets/images/image-6.png" target="blank"><center><img src="assets/images/image-6.png"></center></a><br><br>
+
+		<hr>
+
+		<h3 id="menu"><strong>D) Top Menu</strong> - <a href="#toc">top</a></h3>
+		<p>To create the top menu go to <em><strong>Appearance &gt; Menus.</strong></em> Create the menu by entering title of the menu in the field <em><strong>Menu Name</strong></em> and clicking <em><strong>Save Menu </strong></em>to save.</p>
+		<a href="assets/images/image-7.png" target="blank"><center><img src="assets/images/image-7.png"></center></a><br><br>
+		<p>Then activate the menu by choosing active menu on the left and saving it (see picture)</p>
+		<a href="assets/images/image-8.png" target="blank"><center><img src="assets/images/image-8.png"></center></a><br><br>
+		<p>After it is done, add the created pages to the menu</p>
+		
+		<a href="assets/images/image-9.png" target="blank"><center><img src="assets/images/image-9.png"></center></a><br><br>
+		<p>To create menu categories, move the field a little to the right; see picture <em><strong>(three levels of categories are available) </strong></em></p>
+		<a href="assets/images/image-10.png" target="blank"><center><img src="assets/images/image-10.png"></center></a><br><br>
+		<hr>
+		
+		
+		<h3 id="widgets"><strong>E) Right Sidebar interchangeable widgets</strong> - <a href="#toc">top</a></h3>
+		<p>To set up widgets go to <em><strong>Appearance &gt;&gt; Widgets</strong></em>. Every theme may have different number of widget windows to insert them on the right side.</p>
+		<a href="assets/images/image-11.png" target="blank"><center><img src="assets/images/image-11.png"></center></a><br><br>
+		<p>Each theme may have a different number of widgets developed by us. Their title usually starts with the title of the theme, which means that they are specially intended for the particular theme.</strong></em></p>
+		<a href="assets/images/image-12.png" target="blank"><center><img src="assets/images/image-12-m.png"></center></a><br><br>
+		<p>Move them with a mouse to the necessary field on the right and fill the necessary information if required; see picture.</p>
+		<a href="assets/images/image-13.png" target="blank"><center><img src="assets/images/image-13.png"></center></a><br><br>
+
+		
+	
+		<hr>
+		
+		<h3 id="controlpanel"><strong>F) Orange Themes administration panel</strong> - <a href="#toc">top</a></h3>
+		
+		<p style="padding-left:20px;"><b>1) Introduction</b> </p>
+		<p style="padding-left:20px;">After activating the theme in wp-admin, new menu option will appear on the left; see picture below.</p>
+		<a href="assets/images/image-14.png" target="blank"><center><img src="assets/images/image-14.png"></center></a><br><br>
+		<p style="padding-left:20px;">Depending on the theme, other new sections will appear.</p>
+		<a href="assets/images/image-15.png" target="blank"><center><img src="assets/images/image-15.png"></center></a><br><br>
+		<p style="padding-left:20px;">Administer the theme through these sections. Open section <em><strong>Managment</strong></em> and configure majority of theme settings.</p>
+		
+		<p style="padding-left:20px;"><b>2) General settings of the page</b></p>
+		<a href="assets/images/image-16.png" target="blank"><center><img src="assets/images/image-16-m.png"></center></a><br><br>
+		<p style="padding-left:20px;"><p lang="en-US">Here you can set the logo of the theme, choose to use cufon, set the style of the blog as well as other important options.</p>
+		<p lang="en-US"></p>
+		<em><strong>* Cufon</strong></em><em> – replaces standard fonts with their images thus making them the same for all browsers. Some latin symbols are not supported therefore you can switch it off.</em></p>
+		
+		<p style="padding-left:20px;"><b>3) Blog settings</b></p>
+		<p style="padding-left:20px;">Choose to show thumbnails alongside the blog or show them only after opening the post, or to put <em><strong>No image</strong></em> if there is no such, etc.</p>
+		
+		<p style="padding-left:20px;"><b>4) Homepage settings</b></p>
+		<p style="padding-left:20px;">Set your own information blocks of the homepage and other information related to the homepage.</p>		
+		
+		<p style="padding-left:20px;"><b>5) Contact settings</b></p>
+		<p style="padding-left:20px;" lang="en-US">You can set contact information, e-mail fields where to receive emails from contact field, if such is created, as well as links from social networks and RSS.
+		To set a map go to <span style="color: #000080;"><span style="text-decoration: underline;"><a href="http://maps.google.com/">http://maps.google.com/</a></span></span> , enter address, then in the upper right corner click on the <em><strong>link </strong></em>icon and copy the link similar to this one: <span style="color: #000080;"><span style="text-decoration: underline;"><a href="http://maps.google.com/maps?q=235+Regent+Street,+London,+W1B+2EL&amp;hl=en&amp;ll=51.514592,-0.142114&amp;spn=0.008666,0.026157&amp;sll=49.95122,-74.794922&amp;sspn=36.885557,107.138672&amp;z=14">http://maps.google.com/maps?q=235+Regent+Street,+London,+W1B+2EL&amp;hl=en&amp;ll=51.514592,-0.142114&amp;spn=0.008666,0.026157&amp;sll=49.95122,-74.794922&amp;sspn=36.885557,107.138672&amp;z=14</a></span></span> Then copy the link to the administration panel in the contact window at the google maps location field.
+		</p>
+		<a href="assets/images/image-17.png" target="blank"><center><img src="assets/images/image-17.png"></center></a><br><br>
+		
+		<p style="padding-left:20px;" id="slidersett"><b>6) Slider settings</b></p>
+		<p style="padding-left:20px;">You can activate and change slider effects. Choose category of slides (<em>category from where the posts shall be taken for the slider; if such is not created, then create it and set up</em>).<em> </em>The category of slides should be set obligatory otherwise the slider will not work well!</p>	
+		<a href="assets/images/image-18.png" target="blank"><center><img src="assets/images/image-18-m.png"></center></a><br><br>
+		<p style="padding-left:20px;">You can change the sequence of appearance of images for the homepage by moving them with mouse up or down.</p>	
+		<a href="assets/images/image-19.png" target="blank"><center><img src="assets/images/image-19.png"></center></a><br><br>
+		<p style="padding-left:20px;">You can change slider effects too.</p>
+		<a href="assets/images/image-20.png" target="blank"><center><img src="assets/images/image-20.png"></center></a><br><br>
+
+		
+		
+		<hr>
+		
+		<h3 id="thumbnails"><strong>G) Post Thumbnails </strong> - <a href="#toc">top</a></h3>
+		<p>To add thumbnails, first upload the image, then open additional information of the image and see option <em><strong>Use as featured image</strong></em> below; choose it and the image will be automatically added to the post.</p>
+		<a href="assets/images/image-21.png" target="blank"><center><img src="assets/images/image-21-m.png"></center></a><br><br>
+		<p>Or you can do it at the right sidebar.</p>
+		<a href="assets/images/image-22.png" target="blank"><center><img src="assets/images/image-22.png"></center></a><br><br>
+		
+		<hr>
+		
+		<h3 id="sliderimg"><strong>H) Add slider images</strong> - <a href="#toc">top</a></h3>
+		
+		<p>You can add separate pictures to the slider; there will be an additional option at adding posts <em><strong>Slider Image</strong></em>, copy location of image in the field <em><strong>Image url</strong></em> or upload it from your computer by using <em><strong>Browse</strong></em></p>
+		<a href="assets/images/image-23.png" target="blank"><center><img src="assets/images/image-23.png"></center></a><br><br>
+		<p>The post should be added to the respective category which is set for the particular slider. Detailed information here <a href="#slidersett"><em><strong>Slider settings</strong></em></a></p>
+		
+		<hr>
+	
+		<h3 id="readmore"><strong>I) Use Read More tags in your posts</strong> - <a href="#toc">top</a></h3>
+		
+		<p><span style="color: #000000;">It is advisable to add</span><span style="color: #000000;"><em><strong>Read More </strong></em></span><span style="color: #000000;">tag in every post. Thus on the homepage there will be only the introduction of the post and one will read the post in full only after opening it. It is also advisable to add only a few sentences before this tag, so that the introduction was not too long!</span></p>
+		<a href="assets/images/image-24.png" target="blank"><center><img src="assets/images/image-24-m.png"></center></a><br><br>
+
+		<h3 id="gallery"><strong>J) Gallery page </strong> - <a href="#toc">top</a></h3>
+		
+		<p><span style="color: #000000;">To set up a gallery, create a new page and choose </span><span style="color: #000000;"><em><strong>Gallery</strong></em></span><span style="color: #000000;"> template.</span></p>
+		<a href="assets/images/image-25.png" target="blank"><center><img src="assets/images/image-25.png"></center></a><br><br>
+		
+		<p><span style="color: #000000;">Then choose on the left menu </span><span style="color: #000000;"><em><strong>Gallery &gt;&gt; Add New</strong></em></span><span style="color: #000000;">. Then upload pictures you wish to add to the gallery. You only need to upload pictures and the will be stored in the respective gallery automatically! Then set the </span><span style="color: #000000;"><em><strong>Featured Image</strong></em></span><span style="color: #000000;">, which will be the title image of the gallery, and save it. If you wish to add description under pictures, you can write them in the field of the post, but it is optional. Do not add short url of the gallery in your post!!!</span></p>
+
+
+		<hr>
+
+		<h3 id="reservations"><strong>K) Using reservations</strong> - <a href="#toc">top</a></h3>
+		
+		<p><span style="color: #000000;">Bordeaux </span><span style="color: #000000;">theme offers to create reservation page where clients can book tables in the restaurant! Reservation page is created similarly like Gallery page and Home page: choose </span><span style="color: #000000;"><em><strong>Reservations</strong></em></span><span style="color: #000000;"> template.</span>
+
+		<span style="color: #000000;">All incoming bookings are stored in the data base and are available at </span><span style="color: #000000;"><em><strong>Theme administration panel</strong></em></span><span style="color: #000000;"> by reservations. Bookings may be approved or rejected by sending a respective email to the client with the prepared text. After approved at reservations’ page the booking is counted in, which means that it is approved and the limit for bookings is reached at that day, then the calendar date is coloured in the respective colour. </span>
+		<p lang="en-US"><span style="color: #000000;">Red – if the schedule is full, orange – if partially full.</span></p></p>
+		<a href="assets/images/image-26.png" target="blank"><center><img src="assets/images/image-26.png"></center></a><br><br>
+		<p><p lang="en-US"><span style="color: #000000;">Maximal number of reservations for the day may be set in the administration panel. Partially full days are calculated by dividing maximal number by two.</span></p>
+		<p lang="en-US"><span style="color: #000000;">Unapproved reservations are available in the upper administration toolbar.</span></p></p>
+		<a href="assets/images/image-31.png" target="blank"><center><img src="assets/images/image-31.png"></center></a><br><br>
+
+
+		<hr>
+		
+		<h3 id="cantact"><strong>L) Contact page </strong> - <a href="#toc">top</a></h3>
+		
+		<p>The page is set like previous ones. But in comparison to other pages, in this page you can add description in the blog field and it will appear right on top of the contact field. Messages from the contact field will be send to the email address indicated in the contact field of the theme administration panel. If there will be no email indicated, then contact field will not work!</p>
+
+		<hr>
+		
+		<h3 id="menu"><strong>M) Menu Card page </strong> - <a href="#toc">top</a></h3>
+		
+		<p>Created like other pages. Then in the menu of the left sidebar go to <em><strong>Bordeaux Menu &gt;&gt; Bordeaux Menu</strong></em> <em><strong>Categories</strong></em> and add new categories of the menu of dishes.
+
+		<br><br><span style="color: #ff0000;"><strong>Attention</strong></span><span style="color: #ff0000;"><strong>! </strong></span>Each category is one page of the menu. Each category should have at least one subdivision!</p>
+		<a href="assets/images/image-27.png" target="blank"><center><img src="assets/images/image-27-m.png"></center></a><br><br>
+		<p>Then you can add a new post <em><strong>Bordeaux Menu &gt;&gt; Add new</strong></em>. All posts should be added to any of the created subdivisions, otherwise they will not be posted!
+		<p lang="en-US"></p>
+		By adding a post, you can add a price of the dish or add it to the slider<em> (</em><em><strong>featured image</strong></em><em> will be available in the slider pictures)</em>, or add it to the popular offering in the Home page.</p>
+		<a href="assets/images/image-28.png" target="blank"><center><img src="assets/images/image-28-m.png"></center></a><br><br>		
+		<p>Additional attached options are available in the blog homepage.</p>
+		<a href="assets/images/image-29.png" target="blank"><center><img src="assets/images/image-29.png"></center></a><br><br>		
+		<p lang="en-US">By adding a new dish description it is advisable to use specially provided shortcodes, which look like this:</p>
+		<p lang="en-US">[directions title="Directions"]</p>
+		<p style="padding-left: 30px;" lang="en-US">&lt;ol&gt;</p>
+		<p style="padding-left: 60px;" lang="en-US">&lt;li&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec leo mauris, aliquam bibendum tincidunt nec.&lt;/li&gt;</p>
+		<p style="padding-left: 60px;" lang="en-US">&lt;li&gt;Morbi felis elit, varius nec volutpat at, iaculis at mauris. In hac habitasse platea dictumst. Quisque fermentum felis scelerisque augue bibendum eu tincidunt eros accumsan.&lt;/li&gt;</p>
+		<p style="padding-left: 60px;" lang="en-US">&lt;li&gt;Pellentesque magna ligula, malesuada quis accumsan vitae, congue in ligula. Praesent vitae metus nec lorem.&lt;/li&gt;</p>
+		<p style="padding-left: 30px;" lang="en-US">&lt;/ol&gt;</p>
+		<p lang="en-US">[/directions] [ingredients title="Ingredients"]</p>
+		<p style="padding-left: 30px;" lang="en-US">&lt;ul&gt;</p>
+		<p style="padding-left: 60px;" lang="en-US">&lt;li&gt;1/2 cup oat bran;&lt;/li&gt;</p>
+		<p style="padding-left: 60px;" lang="en-US">&lt;li&gt;1 cup wheat bran;&lt;/li&gt;</p>
+		<p style="padding-left: 60px;" lang="en-US">&lt;li&gt;1/2 cup sour cream;&lt;/li&gt;</p>
+		<p style="padding-left: 60px;" lang="en-US">&lt;li&gt;1/2 cup milk;&lt;/li&gt;</p>
+		<p style="padding-left: 60px;" lang="en-US">&lt;li&gt;1 cup all-purpose flour;&lt;/li&gt;</p>
+		<p style="padding-left: 30px;" lang="en-US">&lt;/ul&gt;</p>
+		<p lang="en-US">[/ingredients]</p>
+		<p>From the shortcode <em><strong>ingredients </strong></em>the ingredients will be indicated in the menu at the description.</p>
+			
+		<a href="assets/images/image-30.png" target="blank"><center><img src="assets/images/image-30.png"></center></a><br><br>		
+		If you do not use <em><strong>ingredients </strong></em>shortcode, then only the few first words of the general description of the dish will appear in the description.
+		<p lang="en-US"></p>
+		<p lang="en-US">Dishes of the menu have an open post of their own style which differs from the blog and therefore it is advisable to use shortcodes intended for the menu of dishes.</p>
+		<hr>
+	
+		<h3 id="blogpage"><strong>N) Blog page</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Blog page supports two styles which may be set in the administration panel of the theme at the general settings of the page. By changing styles, the changes appear in all posts of the blog section as well as in the currently opened post; styles are coordinated and they cannot be changed separately.</p>
+		<hr>
+	
+		<h3 id="shortcodes"><strong>O) Shortcode</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Bordeaux theme supports several shortcodes, more information upon shortcodes here <span style="color: #000080;"><span style="text-decoration: underline;"><a href="http://bordeaux.orange-themes.com/">http://bordeaux.orange-themes.com</a></span></span> <em><strong>Features &gt;&gt; Shortcode</strong></em> <em><strong> </strong></em>.</p>
+		<hr>
+	
+		<h3 id="cssfiles"><strong>P) Css Files</strong> - <a href="#toc">top</a></h3>
+		
+		<p>All files are in the css folder, manage them attentively!</p>
+		<hr>
+	
+		<h3 id="translating"><strong>R) Translating</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Bordeaux theme has multilanguage support! You can easily translate it to the desired language by using a free PostEdit program. </p>
+
+		
+		<hr>
+		
+	
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		
+		<p class="append-bottom alt large"><strong>Orange Themes</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
