@@ -64,11 +64,24 @@ function geodir_list_view_select()
     <div class="geodir-list-view-select">
         <select id="dynamic_select">
     <option value="" selected>เลือกจงหวัด</option>
-    <option value="?geodir_search=1&stype=gd_place&s=+ร้านอาหาร&snear=สุโขทัย&sgeo_lat=17.0055573&sgeo_lon=99.82637120000004">สุโขทัย</option>
-    <option value="http://www.youtube.com/">YouTube</option>
-    <option value="http://www.stackoverflow.com/">Stack Overflow</option>
+    <option value="สุโขทัย-ร้านอาหาร/">สุโขทัย</option>
+    <option value="กำแพงเพชร-ร้านอาหาร/">กำแพงเพชร</option>
+    <option value="เชียงใหม่-ร้านอาหาร/">เชียงใหม่</option>
+    <option value="อุตรดิตถ์-ร้านอาหาร/">อุตรดิตถ์</option>
+    <option value="พิษณุโลก-ร้านอาหาร/">พิษณุโลก</option>
+    <option value="แม่ฮ่องสอน-ร้านอาหาร/">แม่ฮ่องสอน</option>
+    <option value="เชียงราย-ร้านอาหาร/">เชียงราย</option>
+    <option value="เพชรบูรณ์/">เพชรบูรณ์</option>
+    <option value="พะเยา-ร้านอาหาร/">พะเยา</option>
+    <option value="แพร่-ร้านอาหาร/">แพร่</option>
+    <option value="ตาก-ร้านอาหาร/">ตาก</option>
+    <option value="ลำพูน-ร้านอาหาร/">ลำพูน</option>
+    <option value="น่าน-ร้านอาหาร/">น่าน</option>
+    <option value="ลำปาง/">ลำปาง</option>
+
 </select>
 
+   
 
 <script>
       // bind change event to select
@@ -82,7 +95,43 @@ function geodir_list_view_select()
 
 </script>
     </div>
+
+
+     <div class="geodir-list-view-select">
+        <select id="dynamic_select2">
+    <option value="" selected>เลือกจงหวัด</option>
+    <option value="สุโขทัย/">สุโขทัย</option>
+    <option value="กำแพงเพชร/">กำแพงเพชร</option>
+    <option value="เชียงใหม่/">เชียงใหม่</option>
+    <option value="อุตรดิตถ์/">อุตรดิตถ์</option>
+    <option value="พิษณุโลก/">พิษณุโลก</option>
+    <option value="แม่ฮ่องสอน/">แม่ฮ่องสอน</option>
+    <option value="เชียงราย/">เชียงราย</option>
+    <option value="เพชรบูรณ์/">เพชรบูรณ์</option>
+    <option value="พะเยา/">พะเยา</option>
+    <option value="แพร่/">แพร่</option>
+    <option value="ตาก/">ตาก</option>
+    <option value="ลำพูน/">ลำพูน</option>
+    <option value="น่าน">น่าน</option> 
+    <option value="ลำปาง/">ลำปาง</option>
+
+</select>
+
+<script>
+      // bind change event to select
+      jQuery('#dynamic_select2').change(function () {
+          var url = jQuery(this).val(); // get selected value
+          if (url) { // require a URL
+            
+              window.location = window.location.href+url; // redirect
+          }
+      });
+
+</script>
+    </div>
 <?php
+
+
 
 }
 
